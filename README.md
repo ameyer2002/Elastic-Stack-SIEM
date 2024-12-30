@@ -21,3 +21,5 @@ Open the directory in which the .iso was saved after downloading. Drag the downl
 Start the VM, follow the installation prompts, and use "kali" as both the username and password. Once installed, verify internet connectivity by pinging a site like google.com.
 
 <img width="1710" alt="Screenshot 2024-12-30 at 1 51 20 PM" src="https://github.com/user-attachments/assets/61e79e0e-33e9-4397-8351-621c5336dfd4" />
+
+# 2. Setting up the Agent to Collect Logs
