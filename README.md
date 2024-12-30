@@ -32,8 +32,7 @@ Make sure "Linux Tar" is selected and then copy that command to your clipboard w
 
 ![image](https://github.com/user-attachments/assets/e73c0c66-f59f-4928-bb53-f4bba1f70c57)
 
-![image](https://github.com/user-attachments/assets/10a05d34-6f48-49ab-b9f5-48274e8d4a15)
-
+![image](https://github.com/user-attachments/assets/e1a82aa8-3705-4f1b-a9a8-0163f593d257)
 
 
 
