@@ -48,7 +48,7 @@ You can also verify that the agent has been installed by running the command: su
 
 Since Nmap already comes preinstalled in Kali, open a new terminal and start running some of these commands. These scans generate security events, such as the detection of open ports and the services running on those ports.
 
-Root Terminal Emulator:
+# Root Terminal Emulator:
 
 nmap -sS (ip address)
 
@@ -58,7 +58,7 @@ nmap -p- (ip address)
 
 nmap -A -p- (ip address)
 
-Terminal Emulator:
+# Terminal Emulator:
 
 sudo nmap -sS (ip address)
 
