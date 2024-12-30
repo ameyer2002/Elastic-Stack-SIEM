@@ -25,4 +25,4 @@ Start the VM, follow the installation prompts, and use "kali" as both the userna
 # 2. Setting up the Agent to Collect Logs
 The next step is to create an account in Elastic and then head over to integrations in Kibana. Search for "Elastic Defend" and download.
 
-<img width="1510" alt="Screenshot 2024-12-30 at 2 58 09 PM" src="https://github.com/user-attachments/assets/470bc49b-07c4-4129-a754-830d0265a119" />
+<img width="1710" alt="Screenshot 2024-12-30 at 2 58 09 PM" src="https://github.com/user-attachments/assets/470bc49b-07c4-4129-a754-830d0265a119" />
