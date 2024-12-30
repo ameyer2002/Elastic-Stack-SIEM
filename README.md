@@ -26,3 +26,14 @@ Start the VM, follow the installation prompts, and use "kali" as both the userna
 The next step is to create an account in Elastic and then head over to integrations in Kibana. Search for "Elastic Defend" and download.
 
 <img width="1710" alt="Screenshot 2024-12-30 at 2 58 09 PM" src="https://github.com/user-attachments/assets/470bc49b-07c4-4129-a754-830d0265a119" />
+
+
+Make sure "Linux Tar" is selected and then copy that command to your clipboard which will then be pasted into the Kali terminal command line.
+
+![image](https://github.com/user-attachments/assets/e73c0c66-f59f-4928-bb53-f4bba1f70c57)
+
+![image](https://github.com/user-attachments/assets/10a05d34-6f48-49ab-b9f5-48274e8d4a15)
+
+
+
+
