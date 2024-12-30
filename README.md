@@ -51,15 +51,21 @@ Since Nmap already comes preinstalled in Kali, open a new terminal and start run
 Root Terminal Emulator:
 
 nmap -sS (ip address)
+
 nmap -sT (ip address)
+
 nmap -p- (ip address)
+
 nmap -A -p- (ip address)
 
 Terminal Emulator:
 
 sudo nmap -sS (ip address)
+
 sudo nmap -sT (ip address)
+
 sudo nmap -p- (ip address)
+
 sudo nmap -A -p- (ip address)
 
 You can also just type "local host" in place of your host IP address which will return the same results.
