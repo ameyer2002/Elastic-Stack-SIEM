@@ -40,6 +40,11 @@ Once the agent is installed, which may take a few minutes, you should see a mess
 
 ![image](https://github.com/user-attachments/assets/57cad58b-6bf0-4e5e-891f-cf10c65d801c)
 
+You can also verify that the agent has been installed by running the command: sudo systemctl status elastic-agent.service
+
+<img width="645" alt="Screenshot 2024-12-30 at 4 00 35 PM" src="https://github.com/user-attachments/assets/c9a80db2-2117-4b18-8631-24886865e911" />
+
+
 
 
 
