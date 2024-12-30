@@ -68,7 +68,8 @@ sudo nmap -p- (ip address)   Port scan
 
 You can also just type "local host" in place of your host IP address which will return the same results.
 
-<img width="645" alt="Screenshot 2024-12-30 at 4 31 28 PM" src="https://github.com/user-attachments/assets/76431f3d-c953-482f-9807-3e13ebeebe11" />
+![image](https://github.com/user-attachments/assets/f2cbe1b9-5cb5-4723-a232-c49a78640e3a)
+
 
 
 
