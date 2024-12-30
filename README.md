@@ -71,6 +71,9 @@ You can also just type "local host" in place of your host IP address which will 
 <img width="643" alt="Screenshot 2024-12-30 at 4 37 00 PM" src="https://github.com/user-attachments/assets/35cbce4f-cb3e-45d9-8bc9-36b124f03d60" />
 
 
+# 4. Querying Security Events in the Elastic SIEM
+
+
 
 
 
