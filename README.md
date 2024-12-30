@@ -4,9 +4,17 @@ In this guide, I'll walk you through the process of setting up a home lab for El
 
 
 # 1. Setting up the Kali Linux VM
-After downloading VMware Fusion, I will download the Apple-Silicon (ARM64) Installer Image. This version of the Kali Linux installer is specifically designed for Macs with Apple-Silicon chips (such as M1, M2, or M3).
+After downloading VMware Fusion, you will download the Apple-Silicon (ARM64) Installer Image. This version of the Kali Linux installer is specifically designed for Macs with Apple-Silicon chips (such as M1, M2, or M3).
 
 ![image](https://github.com/user-attachments/assets/5c7f8c27-b771-407e-93a8-e590956dc3be)
+
+
+Open the directory in which the .iso was saved after downloading. Drag the downloaded .iso to the window and begin the installation (Debian 12.x 64-bit Arm). We can also just  click on “install from disk or image”, or “use another disc, or disc image” option from the VMware Fusion application window.
+
+![image](https://github.com/user-attachments/assets/31b69dc9-2f4d-44cf-8045-60f9ae0dac01)
+![image](https://github.com/user-attachments/assets/46c3f03b-c9e3-4f59-87b3-cda4d676a136)
+![image](https://github.com/user-attachments/assets/9a874344-e279-4177-8383-742b24e381a6)
+
 
 
 
