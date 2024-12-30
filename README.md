@@ -50,23 +50,21 @@ Since Nmap already comes preinstalled in Kali, open a new terminal and start run
 
 # Root Terminal Emulator:
 
-nmap -sS (ip address)
+nmap -sS (ip address)   SYN scan
 
-nmap -sT (ip address)
+nmap -sT (ip address)   TCP connect scan
 
-nmap -p- (ip address)
+nmap -p- (ip address)   Port scan
 
-nmap -A -p- (ip address)
 
 # Terminal Emulator:
 
-sudo nmap -sS (ip address)
+sudo nmap -sS (ip address)   SYN scan
 
-sudo nmap -sT (ip address)
+sudo nmap -sT (ip address)   TCP connect scan
 
-sudo nmap -p- (ip address)
+sudo nmap -p- (ip address)   Port scan
 
-sudo nmap -A -p- (ip address)
 
 You can also just type "local host" in place of your host IP address which will return the same results.
 
