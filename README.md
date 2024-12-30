@@ -36,3 +36,14 @@ Make sure "Linux Tar" is selected and then copy that command to your clipboard w
 
 
 
+Once the agent is installed, which may take a few minutes, you should see a message indicating that the "Elastic Agent has been successfully installed." The agent will then begin automatically collecting and forwarding logs to your Elastic SIEM instance. However, it might take a few minutes for the logs to appear in the SIEM.
+
+![image](https://github.com/user-attachments/assets/57cad58b-6bf0-4e5e-891f-cf10c65d801c)
+
+
+
+
+
+
+
+
