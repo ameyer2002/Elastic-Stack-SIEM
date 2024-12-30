@@ -70,6 +70,9 @@ sudo nmap -A -p- (ip address)
 
 You can also just type "local host" in place of your host IP address which will return the same results.
 
+<img width="645" alt="Screenshot 2024-12-30 at 4 31 28 PM" src="https://github.com/user-attachments/assets/76431f3d-c953-482f-9807-3e13ebeebe11" />
+
+
 
 
 
