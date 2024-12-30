@@ -5,3 +5,4 @@ In this guide, I'll walk you through the process of setting up a home lab for El
 Steps for completing this project
 
 1. Setting up the Kali Linux VM
+<img width="1710" alt="Screenshot 2024-12-30 at 1 51 20 PM" src="https://github.com/user-attachments/assets/61e79e0e-33e9-4397-8351-621c5336dfd4" />
