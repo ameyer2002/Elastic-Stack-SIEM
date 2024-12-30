@@ -44,8 +44,23 @@ You can also verify that the agent has been installed by running the command: su
 
 <img width="645" alt="Screenshot 2024-12-30 at 4 00 35 PM" src="https://github.com/user-attachments/assets/c9a80db2-2117-4b18-8631-24886865e911" />
 
+# 3. Generating Security Events on Kali VM
 
+Since Nmap already comes preinstalled in Kali, open a new terminal and start running some of these commands. These scans generate security events, such as the detection of open ports and the services running on those ports.
 
+Root Terminal Emulator:
+nmap -sS <ip address>
+nmap -sT <ip address>
+nmap -p- <ip address>
+nmap -A -p- <ip address>
+
+Terminal Emulator:
+sudo nmap -sS <ip address>
+sudo nmap -sT <ip address>
+sudo nmap -p- <ip address>
+sudo nmap -A -p- <ip address>
+
+You can also just type "local host" in place of your host IP address which will return the same results.
 
 
 
