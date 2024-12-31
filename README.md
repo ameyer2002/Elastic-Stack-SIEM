@@ -30,7 +30,8 @@ The next step is to create an account in Elastic and then head over to integrati
 
 Make sure "Linux Tar" is selected and then copy that command to your clipboard which will then be pasted into the Kali terminal command line.
 
-![image](https://github.com/user-attachments/assets/e73c0c66-f59f-4928-bb53-f4bba1f70c57)
+<img width="1703" alt="Screenshot 2024-12-30 at 3 36 06 PM" src="https://github.com/user-attachments/assets/9369d867-977e-455f-994b-7dfd9620b414" />
+
 
 ![image](https://github.com/user-attachments/assets/e1a82aa8-3705-4f1b-a9a8-0163f593d257)
 
