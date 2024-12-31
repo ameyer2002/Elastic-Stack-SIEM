@@ -98,6 +98,13 @@ To create an alert, you must create a predefined rule first so that it can trigg
 # Alerts
 <img width="1701" alt="Screenshot 2024-12-30 at 8 32 44 PM" src="https://github.com/user-attachments/assets/1f5546ed-bb94-49f4-ae7c-e2432bd37b72" />
 
+# Summary
+In this guide, we've set up a home lab with Elastic SIEM and a Kali Linux VM. We configured the Elastic Beats agent to forward data from the Kali VM to the SIEM, generated security events on the Kali VM using Nmap, and analyzed the logs through the Elastic web interface. Additionally, we created a dashboard to visualize the security events and set up an alert to detect them.
+
+
+
+
+
 
 
 
