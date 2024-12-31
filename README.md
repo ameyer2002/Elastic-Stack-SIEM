@@ -90,6 +90,18 @@ Creating a dashboard is great for analyzing logs and identifying patterns or ano
 
 # 6. Creating an Alert
 
+To create an alert, you must create a predefined rule first so that it can trigger specific actions when certain conditions are met. For this project, I created a rule to detect Nmap scans. To create a rule, go to "Alerts" under the "Security" tab, click on "Manager rules", and click "Create new rule". The rule I created can be seen below. I personally chose to be notified through email whenever a Nmap scan is conducted, however, you can choose any action that best suites you. 
+
+![image](https://github.com/user-attachments/assets/dd799f51-a382-41b8-98bf-0c47e6fba4a2)
+![image](https://github.com/user-attachments/assets/66fcd115-1221-44cc-827a-e429aa8eb10e)
+
+# Alerts
+<img width="1701" alt="Screenshot 2024-12-30 at 8 32 44 PM" src="https://github.com/user-attachments/assets/1f5546ed-bb94-49f4-ae7c-e2432bd37b72" />
+
+
+
+
+
 
 
 
