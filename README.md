@@ -79,6 +79,14 @@ After generating security events using Nmap, you'll want to go back to Elastic a
 ![image](https://github.com/user-attachments/assets/9a16fe0e-2ffe-4ed1-b161-6581995d41d0)
 
 
+# 5. Creating a Dashboard to Visualize the Events
+
+Creating a dashboard is great for analyzing logs and identifying patterns or anomalies in the data. The dashboard below will show a count of security events over time. I chose to show events from the past 30 days. To create this dashbaord, go to "Dashboard" under "Analytics" and create a visualization.
+
+
+<img width="1701" alt="Screenshot 2024-12-30 at 8 02 04 PM" src="https://github.com/user-attachments/assets/4570ea80-d675-48ce-8264-e3b4ffab884f" />
+
+
 
 
 
