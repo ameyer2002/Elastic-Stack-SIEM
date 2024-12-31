@@ -1,0 +1,820 @@
+{
+  "_index": ".internal.alerts-security.alerts-cyber-000001",
+  "_id": "68e25596c416363af85a97c3c4d53b2d5b5b27a575b1e51d3f118802a1a678b7",
+  "_score": 1,
+  "_source": {
+    "kibana.alert.rule.execution.timestamp": "2024-12-20T17:33:27.570Z",
+    "kibana.alert.start": "2024-12-20T17:33:27.570Z",
+    "kibana.alert.last_detected": "2024-12-20T17:33:27.570Z",
+    "kibana.version": "8.17.0",
+    "kibana.alert.rule.parameters": {
+      "description": "checks for nmap scans",
+      "risk_score": 21,
+      "severity": "low",
+      "license": "",
+      "meta": {
+        "from": "1m",
+        "kibana_siem_app_url": "https://0949a639ddf8465d80ab9eed26d23dd2.us-central1.gcp.cloud.es.io/s/cyber/app/security"
+      },
+      "author": [],
+      "false_positives": [],
+      "from": "now-120s",
+      "rule_id": "ab2bdf1c-abb5-464d-ba8d-d617e24ff171",
+      "max_signals": 100,
+      "risk_score_mapping": [],
+      "severity_mapping": [],
+      "threat": [],
+      "to": "now",
+      "references": [],
+      "version": 1,
+      "exceptions_list": [],
+      "immutable": false,
+      "rule_source": {
+        "type": "internal"
+      },
+      "related_integrations": [],
+      "required_fields": [],
+      "setup": "",
+      "type": "query",
+      "language": "kuery",
+      "index": [
+        "apm-*-transaction*",
+        "auditbeat-*",
+        "endgame-*",
+        "filebeat-*",
+        "logs-*",
+        "packetbeat-*",
+        "traces-apm*",
+        "winlogbeat-*",
+        "-*elastic-cloud-logs-*"
+      ],
+      "query": "process.name: \"nmap\" AND process.args: (\"-sS\" OR \"-sV\" OR \"-A\" OR \"-O\")",
+      "filters": []
+    },
+    "kibana.alert.rule.category": "Custom Query Rule",
+    "kibana.alert.rule.consumer": "siem",
+    "kibana.alert.rule.execution.uuid": "437ed430-a3b6-4d5b-a05c-68b9bc6adcca",
+    "kibana.alert.rule.name": "nmap detection",
+    "kibana.alert.rule.producer": "siem",
+    "kibana.alert.rule.revision": 17,
+    "kibana.alert.rule.rule_type_id": "siem.queryRule",
+    "kibana.alert.rule.uuid": "8c512e19-ff4a-4ccd-b3da-fb4b58cc1383",
+    "kibana.space_ids": [
+      "cyber"
+    ],
+    "kibana.alert.rule.tags": [],
+    "@timestamp": "2024-12-20T17:33:27.533Z",
+    "agent": {
+      "id": "ef30ef47-47ab-4330-8843-4b9f6e00ff92",
+      "type": "endpoint",
+      "version": "8.17.0"
+    },
+    "process": {
+      "Ext": {
+        "ancestry": [
+          "vpJPJK0lSnu/PPqRVJER9A",
+          "rXUjaWb+KNMuWysqi4VkNA",
+          "Mq7VYFxsQ05t+FfoJgphnQ",
+          "0oQW7QILzVJlI19g5qqWwA",
+          "vX5TgjhA6BqIgXf8ePaLCg"
+        ]
+      },
+      "args": [
+        "/usr/bin/env",
+        "sh",
+        "/usr/bin/nmap",
+        "-sV",
+        "localhost"
+      ],
+      "parent": {
+        "args": [
+          "/usr/bin/zsh"
+        ],
+        "name": "zsh",
+        "pid": 8759,
+        "args_count": 1,
+        "entity_id": "vpJPJK0lSnu/PPqRVJER9A",
+        "command_line": "/usr/bin/zsh",
+        "executable": "/usr/bin/zsh"
+      },
+      "name": "nmap",
+      "pid": 8840,
+      "working_directory": "/root",
+      "args_count": 5,
+      "entity_id": "Xe2hgrAZF2uyFsPhDV/FWw",
+      "command_line": "/usr/bin/env sh /usr/bin/nmap -sV localhost",
+      "executable": "/usr/bin/nmap",
+      "hash": {
+        "sha256": "98387dffbc4bf966ba6428c787dc690ecf43a81f5a8a45017d1d439f24d05e36"
+      }
+    },
+    "ecs": {
+      "version": "8.10.0"
+    },
+    "data_stream": {
+      "namespace": "default",
+      "type": "logs",
+      "dataset": "endpoint.events.process"
+    },
+    "elastic": {
+      "agent": {
+        "id": "ef30ef47-47ab-4330-8843-4b9f6e00ff92"
+      }
+    },
+    "host": {
+      "os": {
+        "type": "linux"
+      },
+      "name": "kali",
+      "id": "4c43cb97f7d4434f94d459062f811f02"
+    },
+    "event": {
+      "agent_id_status": "verified",
+      "sequence": 40203,
+      "ingested": "2024-12-20T17:33:04Z",
+      "created": "2024-12-20T17:32:32.2629044Z",
+      "module": "endpoint",
+      "action": [
+        "exec"
+      ],
+      "id": "NqKb1b8IcEPfSiEC+++++BfG",
+      "category": [
+        "process"
+      ],
+      "type": [
+        "start"
+      ],
+      "dataset": "endpoint.events.process",
+      "outcome": "unknown"
+    },
+    "message": "Endpoint process event",
+    "user": {
+      "Ext": {
+        "real": {
+          "name": "root",
+          "id": 0
+        }
+      },
+      "name": "root",
+      "id": 0
+    },
+    "group": {
+      "Ext": {
+        "real": {
+          "name": "root",
+          "id": 0
+        }
+      },
+      "name": "root",
+      "id": 0
+    },
+    "kibana.alert.original_event.agent_id_status": "verified",
+    "kibana.alert.original_event.sequence": 40203,
+    "kibana.alert.original_event.ingested": "2024-12-20T17:33:04Z",
+    "kibana.alert.original_event.created": "2024-12-20T17:32:32.2629044Z",
+    "kibana.alert.original_event.kind": "event",
+    "kibana.alert.original_event.module": "endpoint",
+    "kibana.alert.original_event.action": [
+      "exec"
+    ],
+    "kibana.alert.original_event.id": "NqKb1b8IcEPfSiEC+++++BfG",
+    "kibana.alert.original_event.category": [
+      "process"
+    ],
+    "kibana.alert.original_event.type": [
+      "start"
+    ],
+    "kibana.alert.original_event.dataset": "endpoint.events.process",
+    "kibana.alert.original_event.outcome": "unknown",
+    "event.kind": "signal",
+    "kibana.alert.original_time": "2024-12-20T17:32:32.262Z",
+    "kibana.alert.ancestors": [
+      {
+        "id": "DcMh5ZMBpf1s-XamSjrK",
+        "type": "event",
+        "index": ".ds-logs-endpoint.events.process-default-2024.12.18-000001",
+        "depth": 0
+      }
+    ],
+    "kibana.alert.status": "active",
+    "kibana.alert.workflow_status": "open",
+    "kibana.alert.depth": 1,
+    "kibana.alert.reason": "process event with process nmap, parent process zsh, by root on kali created low alert nmap detection.",
+    "kibana.alert.severity": "low",
+    "kibana.alert.risk_score": 21,
+    "kibana.alert.rule.actions": [
+      {
+        "id": "elastic-cloud-email",
+        "params": {
+          "message": "Rule {{context.rule.name}} generated {{state.signals_count}} alerts",
+          "to": [
+            "andgerm111702@gmail.com",
+            "mandycarey22@gmail.com"
+          ],
+          "subject": "nmap"
+        },
+        "action_type_id": ".email",
+        "uuid": "7ae9877a-92ae-4f93-b39d-188988be3583",
+        "frequency": {
+          "summary": true,
+          "notifyWhen": "onActiveAlert",
+          "throttle": null
+        },
+        "group": "default"
+      }
+    ],
+    "kibana.alert.rule.author": [],
+    "kibana.alert.rule.created_at": "2024-12-18T22:03:13.404Z",
+    "kibana.alert.rule.created_by": "1179660685",
+    "kibana.alert.rule.description": "checks for nmap scans",
+    "kibana.alert.rule.enabled": true,
+    "kibana.alert.rule.exceptions_list": [],
+    "kibana.alert.rule.false_positives": [],
+    "kibana.alert.rule.from": "now-120s",
+    "kibana.alert.rule.immutable": false,
+    "kibana.alert.rule.interval": "1m",
+    "kibana.alert.rule.indices": [
+      "apm-*-transaction*",
+      "auditbeat-*",
+      "endgame-*",
+      "filebeat-*",
+      "logs-*",
+      "packetbeat-*",
+      "traces-apm*",
+      "winlogbeat-*",
+      "-*elastic-cloud-logs-*"
+    ],
+    "kibana.alert.rule.license": "",
+    "kibana.alert.rule.max_signals": 100,
+    "kibana.alert.rule.references": [],
+    "kibana.alert.rule.risk_score_mapping": [],
+    "kibana.alert.rule.rule_id": "ab2bdf1c-abb5-464d-ba8d-d617e24ff171",
+    "kibana.alert.rule.severity_mapping": [],
+    "kibana.alert.rule.threat": [],
+    "kibana.alert.rule.to": "now",
+    "kibana.alert.rule.type": "query",
+    "kibana.alert.rule.updated_at": "2024-12-20T17:32:08.120Z",
+    "kibana.alert.rule.updated_by": "1179660685",
+    "kibana.alert.rule.version": 1,
+    "kibana.alert.url": "https://0949a639ddf8465d80ab9eed26d23dd2.us-central1.gcp.cloud.es.io/s/cyber/app/security/alerts/redirect/68e25596c416363af85a97c3c4d53b2d5b5b27a575b1e51d3f118802a1a678b7?index=.alerts-security.alerts-cyber&timestamp=2024-12-20T17:33:27.533Z",
+    "kibana.alert.uuid": "68e25596c416363af85a97c3c4d53b2d5b5b27a575b1e51d3f118802a1a678b7",
+    "kibana.alert.workflow_tags": [],
+    "kibana.alert.workflow_assignee_ids": [],
+    "kibana.alert.rule.meta.from": "1m",
+    "kibana.alert.rule.meta.kibana_siem_app_url": "https://0949a639ddf8465d80ab9eed26d23dd2.us-central1.gcp.cloud.es.io/s/cyber/app/security",
+    "kibana.alert.rule.risk_score": 21,
+    "kibana.alert.rule.severity": "low",
+    "kibana.alert.intended_timestamp": "2024-12-20T17:33:27.533Z",
+    "kibana.alert.rule.execution.type": "scheduled"
+  },
+  "fields": {
+    "kibana.alert.severity": [
+      "low"
+    ],
+    "kibana.alert.rule.updated_by": [
+      "1179660685"
+    ],
+    "signal.ancestors.depth": [
+      0
+    ],
+    "event.category": [
+      "process"
+    ],
+    "process.parent.command_line": [
+      "/usr/bin/zsh"
+    ],
+    "process.parent.name": [
+      "zsh"
+    ],
+    "process.hash.sha256": [
+      "98387dffbc4bf966ba6428c787dc690ecf43a81f5a8a45017d1d439f24d05e36"
+    ],
+    "process.parent.pid": [
+      8759
+    ],
+    "signal.original_event.created": [
+      "2024-12-20T17:32:32.262Z"
+    ],
+    "kibana.alert.rule.actions.uuid": [
+      "7ae9877a-92ae-4f93-b39d-188988be3583"
+    ],
+    "kibana.alert.reason.text": [
+      "process event with process nmap, parent process zsh, by root on kali created low alert nmap detection."
+    ],
+    "elastic.agent.id": [
+      "ef30ef47-47ab-4330-8843-4b9f6e00ff92"
+    ],
+    "kibana.alert.ancestors.depth": [
+      0
+    ],
+    "signal.rule.enabled": [
+      "true"
+    ],
+    "signal.rule.max_signals": [
+      100
+    ],
+    "kibana.alert.risk_score": [
+      21
+    ],
+    "signal.rule.updated_at": [
+      "2024-12-20T17:32:08.120Z"
+    ],
+    "event.agent_id_status": [
+      "verified"
+    ],
+    "kibana.alert.original_event.id": [
+      "NqKb1b8IcEPfSiEC+++++BfG"
+    ],
+    "event.outcome": [
+      "unknown"
+    ],
+    "group.name": [
+      "root"
+    ],
+    "host.os.type": [
+      "linux"
+    ],
+    "user.id": [
+      "0"
+    ],
+    "process.Ext.ancestry": [
+      "vpJPJK0lSnu/PPqRVJER9A",
+      "rXUjaWb+KNMuWysqi4VkNA",
+      "Mq7VYFxsQ05t+FfoJgphnQ",
+      "0oQW7QILzVJlI19g5qqWwA",
+      "vX5TgjhA6BqIgXf8ePaLCg"
+    ],
+    "kibana.alert.original_event.module": [
+      "endpoint"
+    ],
+    "user.Ext.real.id": [
+      0
+    ],
+    "kibana.alert.rule.interval": [
+      "1m"
+    ],
+    "kibana.alert.rule.type": [
+      "query"
+    ],
+    "signal.original_event.sequence": [
+      40203
+    ],
+    "kibana.alert.start": [
+      "2024-12-20T17:33:27.570Z"
+    ],
+    "kibana.alert.rule.immutable": [
+      "false"
+    ],
+    "kibana.alert.original_event.type": [
+      "start"
+    ],
+    "agent.id": [
+      "ef30ef47-47ab-4330-8843-4b9f6e00ff92"
+    ],
+    "signal.original_event.module": [
+      "endpoint"
+    ],
+    "kibana.alert.rule.actions.action_type_id": [
+      ".email"
+    ],
+    "signal.rule.from": [
+      "now-120s"
+    ],
+    "kibana.alert.rule.enabled": [
+      "true"
+    ],
+    "kibana.alert.rule.version": [
+      "1"
+    ],
+    "kibana.alert.ancestors.type": [
+      "event"
+    ],
+    "kibana.alert.rule.actions.frequency.summary": [
+      true
+    ],
+    "process.command_line.text": [
+      "/usr/bin/env sh /usr/bin/nmap -sV localhost"
+    ],
+    "kibana.alert.rule.actions.id": [
+      "elastic-cloud-email"
+    ],
+    "signal.ancestors.index": [
+      ".ds-logs-endpoint.events.process-default-2024.12.18-000001"
+    ],
+    "user.name": [
+      "root"
+    ],
+    "signal.original_event.outcome": [
+      "unknown"
+    ],
+    "kibana.alert.rule.actions.params.subject": [
+      "nmap"
+    ],
+    "kibana.alert.rule.actions.params.to": [
+      "andgerm111702@gmail.com",
+      "mandycarey22@gmail.com"
+    ],
+    "process.working_directory": [
+      "/root"
+    ],
+    "process.entity_id": [
+      "Xe2hgrAZF2uyFsPhDV/FWw"
+    ],
+    "agent.type": [
+      "endpoint"
+    ],
+    "process.executable.text": [
+      "/usr/bin/nmap"
+    ],
+    "signal.original_event.category": [
+      "process"
+    ],
+    "group.Ext.real.name": [
+      "root"
+    ],
+    "signal.original_event.id": [
+      "NqKb1b8IcEPfSiEC+++++BfG"
+    ],
+    "host.id": [
+      "4c43cb97f7d4434f94d459062f811f02"
+    ],
+    "user.Ext.real.name": [
+      "root"
+    ],
+    "signal.original_event.type": [
+      "start"
+    ],
+    "kibana.alert.rule.max_signals": [
+      100
+    ],
+    "process.working_directory.text": [
+      "/root"
+    ],
+    "kibana.alert.rule.risk_score": [
+      21
+    ],
+    "signal.original_event.dataset": [
+      "endpoint.events.process"
+    ],
+    "kibana.alert.rule.consumer": [
+      "siem"
+    ],
+    "kibana.alert.rule.actions.params.message": [
+      "Rule {{context.rule.name}} generated {{state.signals_count}} alerts"
+    ],
+    "kibana.alert.rule.indices": [
+      "apm-*-transaction*",
+      "auditbeat-*",
+      "endgame-*",
+      "filebeat-*",
+      "logs-*",
+      "packetbeat-*",
+      "traces-apm*",
+      "winlogbeat-*",
+      "-*elastic-cloud-logs-*"
+    ],
+    "kibana.alert.rule.category": [
+      "Custom Query Rule"
+    ],
+    "group.Ext.real.id": [
+      0
+    ],
+    "event.action": [
+      "exec"
+    ],
+    "event.ingested": [
+      "2024-12-20T17:33:04.000Z"
+    ],
+    "@timestamp": [
+      "2024-12-20T17:33:27.533Z"
+    ],
+    "kibana.alert.original_event.action": [
+      "exec"
+    ],
+    "signal.rule.updated_by": [
+      "1179660685"
+    ],
+    "kibana.alert.intended_timestamp": [
+      "2024-12-20T17:33:27.533Z"
+    ],
+    "kibana.alert.rule.severity": [
+      "low"
+    ],
+    "kibana.alert.original_event.agent_id_status": [
+      "verified"
+    ],
+    "data_stream.dataset": [
+      "endpoint.events.process"
+    ],
+    "kibana.alert.rule.execution.timestamp": [
+      "2024-12-20T17:33:27.570Z"
+    ],
+    "kibana.alert.rule.execution.uuid": [
+      "437ed430-a3b6-4d5b-a05c-68b9bc6adcca"
+    ],
+    "kibana.alert.uuid": [
+      "68e25596c416363af85a97c3c4d53b2d5b5b27a575b1e51d3f118802a1a678b7"
+    ],
+    "kibana.alert.rule.meta.kibana_siem_app_url": [
+      "https://0949a639ddf8465d80ab9eed26d23dd2.us-central1.gcp.cloud.es.io/s/cyber/app/security"
+    ],
+    "kibana.version": [
+      "8.17.0"
+    ],
+    "event.id": [
+      "NqKb1b8IcEPfSiEC+++++BfG"
+    ],
+    "signal.rule.license": [
+      ""
+    ],
+    "signal.ancestors.type": [
+      "event"
+    ],
+    "kibana.alert.rule.rule_id": [
+      "ab2bdf1c-abb5-464d-ba8d-d617e24ff171"
+    ],
+    "user.name.text": [
+      "root"
+    ],
+    "signal.rule.type": [
+      "query"
+    ],
+    "kibana.alert.ancestors.id": [
+      "DcMh5ZMBpf1s-XamSjrK"
+    ],
+    "process.name.text": [
+      "nmap"
+    ],
+    "kibana.alert.url": [
+      "https://0949a639ddf8465d80ab9eed26d23dd2.us-central1.gcp.cloud.es.io/s/cyber/app/security/alerts/redirect/68e25596c416363af85a97c3c4d53b2d5b5b27a575b1e51d3f118802a1a678b7?index=.alerts-security.alerts-cyber&timestamp=2024-12-20T17:33:27.533Z"
+    ],
+    "kibana.alert.rule.description": [
+      "checks for nmap scans"
+    ],
+    "process.pid": [
+      8840
+    ],
+    "kibana.alert.rule.producer": [
+      "siem"
+    ],
+    "kibana.alert.rule.to": [
+      "now"
+    ],
+    "signal.rule.created_by": [
+      "1179660685"
+    ],
+    "signal.rule.interval": [
+      "1m"
+    ],
+    "kibana.alert.rule.created_by": [
+      "1179660685"
+    ],
+    "kibana.alert.original_event.ingested": [
+      "2024-12-20T17:33:04.000Z"
+    ],
+    "signal.rule.id": [
+      "8c512e19-ff4a-4ccd-b3da-fb4b58cc1383"
+    ],
+    "process.parent.entity_id": [
+      "vpJPJK0lSnu/PPqRVJER9A"
+    ],
+    "signal.reason": [
+      "process event with process nmap, parent process zsh, by root on kali created low alert nmap detection."
+    ],
+    "signal.rule.risk_score": [
+      21
+    ],
+    "kibana.alert.rule.name": [
+      "nmap detection"
+    ],
+    "host.name": [
+      "kali"
+    ],
+    "signal.status": [
+      "open"
+    ],
+    "event.kind": [
+      "signal"
+    ],
+    "signal.rule.created_at": [
+      "2024-12-18T22:03:13.404Z"
+    ],
+    "kibana.alert.workflow_status": [
+      "open"
+    ],
+    "kibana.alert.rule.actions.frequency.notifyWhen": [
+      "onActiveAlert"
+    ],
+    "kibana.alert.original_event.created": [
+      "2024-12-20T17:32:32.262Z"
+    ],
+    "kibana.alert.rule.uuid": [
+      "8c512e19-ff4a-4ccd-b3da-fb4b58cc1383"
+    ],
+    "kibana.alert.original_event.category": [
+      "process"
+    ],
+    "kibana.alert.reason": [
+      "process event with process nmap, parent process zsh, by root on kali created low alert nmap detection."
+    ],
+    "process.parent.args_count": [
+      1
+    ],
+    "data_stream.type": [
+      "logs"
+    ],
+    "signal.ancestors.id": [
+      "DcMh5ZMBpf1s-XamSjrK"
+    ],
+    "signal.original_time": [
+      "2024-12-20T17:32:32.262Z"
+    ],
+    "process.name": [
+      "nmap"
+    ],
+    "ecs.version": [
+      "8.10.0"
+    ],
+    "process.parent.executable.text": [
+      "/usr/bin/zsh"
+    ],
+    "signal.rule.severity": [
+      "low"
+    ],
+    "kibana.alert.rule.actions.group": [
+      "default"
+    ],
+    "kibana.alert.ancestors.index": [
+      ".ds-logs-endpoint.events.process-default-2024.12.18-000001"
+    ],
+    "event.created": [
+      "2024-12-20T17:32:32.262Z"
+    ],
+    "agent.version": [
+      "8.17.0"
+    ],
+    "kibana.alert.depth": [
+      1
+    ],
+    "kibana.alert.rule.from": [
+      "now-120s"
+    ],
+    "kibana.alert.rule.parameters": [
+      {
+        "severity": "low",
+        "max_signals": 100,
+        "rule_source": {
+          "type": "internal"
+        },
+        "risk_score": 21,
+        "query": "process.name: \"nmap\" AND process.args: (\"-sS\" OR \"-sV\" OR \"-A\" OR \"-O\")",
+        "description": "checks for nmap scans",
+        "index": [
+          "apm-*-transaction*",
+          "auditbeat-*",
+          "endgame-*",
+          "filebeat-*",
+          "logs-*",
+          "packetbeat-*",
+          "traces-apm*",
+          "winlogbeat-*",
+          "-*elastic-cloud-logs-*"
+        ],
+        "language": "kuery",
+        "type": "query",
+        "version": 1,
+        "rule_id": "ab2bdf1c-abb5-464d-ba8d-d617e24ff171",
+        "license": "",
+        "immutable": false,
+        "meta": {
+          "from": "1m",
+          "kibana_siem_app_url": "https://0949a639ddf8465d80ab9eed26d23dd2.us-central1.gcp.cloud.es.io/s/cyber/app/security"
+        },
+        "setup": "",
+        "from": "now-120s",
+        "to": "now"
+      }
+    ],
+    "kibana.alert.rule.revision": [
+      17
+    ],
+    "signal.rule.version": [
+      "1"
+    ],
+    "signal.original_event.kind": [
+      "event"
+    ],
+    "kibana.alert.status": [
+      "active"
+    ],
+    "kibana.alert.last_detected": [
+      "2024-12-20T17:33:27.570Z"
+    ],
+    "group.id": [
+      "0"
+    ],
+    "kibana.alert.original_event.dataset": [
+      "endpoint.events.process"
+    ],
+    "signal.depth": [
+      1
+    ],
+    "signal.rule.immutable": [
+      "false"
+    ],
+    "process.parent.name.text": [
+      "zsh"
+    ],
+    "event.sequence": [
+      40203
+    ],
+    "kibana.alert.rule.rule_type_id": [
+      "siem.queryRule"
+    ],
+    "signal.rule.name": [
+      "nmap detection"
+    ],
+    "event.module": [
+      "endpoint"
+    ],
+    "signal.rule.rule_id": [
+      "ab2bdf1c-abb5-464d-ba8d-d617e24ff171"
+    ],
+    "kibana.alert.rule.license": [
+      ""
+    ],
+    "kibana.alert.original_event.kind": [
+      "event"
+    ],
+    "process.executable": [
+      "/usr/bin/nmap"
+    ],
+    "process.parent.executable": [
+      "/usr/bin/zsh"
+    ],
+    "process.parent.command_line.text": [
+      "/usr/bin/zsh"
+    ],
+    "process.args_count": [
+      5
+    ],
+    "kibana.alert.rule.updated_at": [
+      "2024-12-20T17:32:08.120Z"
+    ],
+    "signal.rule.description": [
+      "checks for nmap scans"
+    ],
+    "data_stream.namespace": [
+      "default"
+    ],
+    "process.args": [
+      "/usr/bin/env",
+      "sh",
+      "/usr/bin/nmap",
+      "-sV",
+      "localhost"
+    ],
+    "message": [
+      "Endpoint process event"
+    ],
+    "kibana.alert.original_event.outcome": [
+      "unknown"
+    ],
+    "kibana.alert.original_event.sequence": [
+      40203
+    ],
+    "process.parent.args": [
+      "/usr/bin/zsh"
+    ],
+    "signal.original_event.action": [
+      "exec"
+    ],
+    "kibana.alert.rule.created_at": [
+      "2024-12-18T22:03:13.404Z"
+    ],
+    "signal.rule.to": [
+      "now"
+    ],
+    "event.type": [
+      "start"
+    ],
+    "process.command_line": [
+      "/usr/bin/env sh /usr/bin/nmap -sV localhost"
+    ],
+    "kibana.space_ids": [
+      "cyber"
+    ],
+    "kibana.alert.rule.execution.type": [
+      "scheduled"
+    ],
+    "kibana.alert.rule.meta.from": [
+      "1m"
+    ],
+    "event.dataset": [
+      "endpoint.events.process"
+    ],
+    "kibana.alert.original_time": [
+      "2024-12-20T17:32:32.262Z"
+    ]
+  }
+}
