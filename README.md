@@ -88,6 +88,10 @@ Creating a dashboard is great for analyzing logs and identifying patterns or ano
 <img width="1701" alt="Screenshot 2024-12-30 at 8 02 04 PM" src="https://github.com/user-attachments/assets/4570ea80-d675-48ce-8264-e3b4ffab884f" />
 
 
+# 6. Creating an Alert
+
+
+
 
 
 
