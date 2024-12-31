@@ -73,6 +73,8 @@ You can also just type "local host" in place of your host IP address which will 
 
 # 4. Querying Security Events in the Elastic SIEM
 
+After generating security events using Nmap, you'll want to go back to Elastic and under Observability, click on "Logs". Use the search query "process.name: "nmap"" or "process.args: "nmap"".
+
 
 
 
